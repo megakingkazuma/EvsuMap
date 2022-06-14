@@ -1,0 +1,74 @@
+ion-content {
+    --background: url(../../assets/light.jpg) no-repeat center/cover fixed;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+ion-toolbar {
+    --background: transparent;
+}
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.card {
+    height: 420px;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(50, 50, 50, 0.1);
+    padding: 50px 0;
+}
+
+.card * {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0 0 0 8px #0b0b0b;
+}
+
+.details {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.details span {
+    color: black;
+}
+
+.playername {
+    font-size: 24px;
+    font-weight: 600;
+    color: #303940;
+}
+
+.country {
+    font-size: 90%;
+    color: #949ea6;
+    text-transform: uppercase;
+    margin: 0 auto;
+}

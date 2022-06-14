@@ -25,6 +25,21 @@ export class Tab1Page {
       title: "Registrars Office",
       latitude: "11.303407980629519",
       longitude: "124.70685845617439"
+    },
+    {
+      title: "IT Department Office",
+      latitude: "11.303467",
+      longitude: "124.707058"
+    },
+    {
+      title: "Gymnasium",
+      latitude: "11.304451",
+      longitude: "124.706248"
+    },
+    {
+      title: "SASO",
+      latitude: "11.304533",
+      longitude: "124.706527"
     }
   ];
 
@@ -57,13 +72,13 @@ export class Tab1Page {
       '<p>Longitude: ' + marker.longitude + '</p>' +
       '</div>';
 
-    let infoWindow = new google.maps.infoWindow({
+    let infoWindow = new google.maps.InfoWindow({
       content: infoWindowContent
     });
 
-    marker.addListener('click', () => {
+    marker.addListener('click',()=>{
       this.closeAllInfoWindows();
-      infoWindow.open(this.map, marker);
+      infoWindow.open(this.map,marker);
     });
     this.infoWindows.push(infoWindow);
   }
