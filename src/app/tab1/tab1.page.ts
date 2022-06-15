@@ -39,7 +39,7 @@ export class Tab1Page {
     {
       title: "SASO",
       latitude: "11.304533",
-      longitude: "124.706527"
+      longitude: "124.706248"
     }
   ];
 
@@ -67,9 +67,9 @@ export class Tab1Page {
 
   addInfoWindowToMarker(marker) {
     let infoWindowContent = '<div id="content">' +
-      '<h2 id="firstHeading" class"firstHeading">' + marker.title + '</h2>' +
-      '<p>Latitude: ' + marker.latitude + '</p>' +
-      '<p>Longitude: ' + marker.longitude + '</p>' +
+      '<h2 style="color:red; id="firstHeading" class"firstHeading">' + marker.title + '</h2>' +
+      '<p style="color:rgb(97, 92, 92);">Latitude: ' + marker.latitude + '</p>' +
+      '<p style="color:rgb(97, 92, 92);">Longitude: ' + marker.longitude + '</p>' +
       '</div>';
 
     let infoWindow = new google.maps.InfoWindow({
